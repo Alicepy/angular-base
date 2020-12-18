@@ -1,17 +1,30 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
+  /* 设置保存文件的时候自动编译,vscode暂不支持该功能，可以使用'Atom'编辑器 */
   "compileOnSave": false,
+  /* 编译选项配置 */
   "compilerOptions": {
+    /* 解析非相对模块的基地址，默认是当前目录 */
     "baseUrl": "./",
+    /* 指定输出目录 */
     "outDir": "./dist/out-tsc",
+    /* 生成目标文件的sourceMap文件 */
     "sourceMap": true,
+    /* 生成声明文件，开启后会自动生成声明文件 */
     "declaration": false,
+    /* 降级遍历器实现，如果目标源是es3/5，那么遍历器会有降级的实现 */
     "downlevelIteration": true,
+    /* 实验性语法：装饰器 */
     "experimentalDecorators": true,
+    /* 模块解析策略，ts默认用node的解析策略，即相对的方式导入 */
     "moduleResolution": "node",
+    /* 通过tslib引入helper函数，文件必须是模块 */
     "importHelpers": true,
+    /* 目标语言的版本 */
     "target": "es2015",
+    /* 生成代码的模板标准 */
     "module": "es2020",
+    /* TS需要引用的库，即声明文件，es5 默认引用dom、es5、scripthost,如需要使用es的高级版本特性，通常都需要配置，如es8的数组新特性需要引入"ES2019.Array", */
     "lib": [
       "es2018",
       "dom"
