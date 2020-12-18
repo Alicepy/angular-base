@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
+import { OverlayComponent } from './pages/overlay/overlay';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'header',
     component: HeaderComponent
+  },
+  {
+    path: 'overlay',
+    component: OverlayComponent
   },
   {
     path: '**',
